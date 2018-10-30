@@ -1,24 +1,32 @@
-# README
+# ![CI status](http://oi68.tinypic.com/ngf2uo.jpg)    
+#  The Hacking Project
+<br/>
+<h2>:japanese_goblin: Week 4 - Tusday 30 october : I love form :japanese_ogre: </h2>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<body>
 
-Things you may want to cover:
+<h1>Introduction</h1>
 
-* Ruby version
+<h5>
+ Step to follow:
+ </h5>
+<ol>
+ <li>Make a git clone: <code>https://github.com/Zybouric/iloveforms </code></li>
+ <li>Install our gems: <code>bundle install</code></li>
+ <li>Make a db:reset <code>rails db:reset</code></li>
+ <li>Make a rails server <code>rails server</code></li>
+ 
+</ol>
 
-* System dependencies
+  <p> To see the final result go there : XXXXXlien herokuXXXXXX
 
-* Configuration
+  <h2>Team</h2>
 
-* Database creation
+ <p>Hey guys ! We're from the Team SaphyR ! 2/6</p>
+<ul>
 
-* Database initialization
+<li>Christine aka Zybouric :beer: <a href="https://github.com/Zybouric"><code>clic</code></a><br/></li>
+<li>Antoine aka Tonoutt :runner:  <a href="https://github.com/tonoutt"><code>clic</code></a><br/></li>
+</ul>
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+</body>
