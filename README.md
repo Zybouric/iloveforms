@@ -27,6 +27,8 @@
 
 <li>Christine aka Zybouric :beer: <a href="https://github.com/Zybouric"><code>clic</code></a><br/></li>
 <li>Antoine aka Tonoutt :runner:  <a href="https://github.com/tonoutt"><code>clic</code></a><br/></li>
+<li>Kathleen aka Funkykath :iphone: <a href="https://github.com/Funkykath"><code>clic</code></a><br/></li>
+<li>Asvinie aka Asvinie057 :princess: <a href="https://github.com/asvinie057"><code>clic</code></a><br/></li>
 </ul>
 
 </body>
