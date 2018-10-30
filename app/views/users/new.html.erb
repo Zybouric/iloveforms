@@ -1,16 +1,26 @@
-<form method="post" action="/users">
 
-    <div>
-        <label for="username">Votre pseudo :</label>
-        <input type="text" name="username" id="username" placeholder="Ex : Zozor" size="30" maxlength="10" />
-    </div>
-    <div>
-        <label for="email">Email :</label>
-        <input type="email" name="email" id="email" placeholder="Ex : Zozor@email.com" size="30" maxlength="10" />
-    </div>
-    <div class ="button">
-    	<button type "submit" > Save user</button>
-    	<button type "reset"> Reset </button>
 
-    </div>
+<form action="/users" method="POST">
+    Username: <input type="string" name="username">
+</br>
+   Email: <input type="string" name="email">
+</br>
+   Gossip <input type="text" name="bio">
+</br>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</br>
+  <input type="submit" value="Envoyer le formulaire">
 </form>
+
+
+<%= form_for @users, url: {action: "create"} do |f| %>
+    
+    Username: <%= f.text_field :username %>
+    Email: <%= f.text_field :email %>
+    Gossip: <%= f.text_area :bio %>
+    <%= f.submit%>
+
+<% end %>
+
+
+

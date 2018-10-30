@@ -1,9 +1,21 @@
 class UsersController < ApplicationController
    def new
-    @user = User.new
-  end
+     @users = User.new
+   end
 
+   def create
+     @user = User.new('username' => params[:user][:username], 'email' => params[:user][:email], 'bio' => params[:user][:bio])
+     if @user.save
+      redirect_to users_path
+  	else
+      render 'new'
+  	end
+   end 
+  
   def index
-    @users = User.all
+     @users = User.all
+  end
+  def show
+  	@users = User.all
   end
 end
