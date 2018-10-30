@@ -1,5 +1,11 @@
+<% if false %>
 <%= form_for User.new do |form| %>
   <%= form.text_field :username %>
   <%= form.text_field :email %>
   <%= form.submit %>
 <% end %>
+
+<%= form_tag_for User.new do |form_tag| %>
+  <%= form_tag.text_field :username %>
+  <%= form_tag.text_field :email %>
+  <%= form_tag.submit %>

@@ -1,16 +1,43 @@
+<% if false %>
 <form method="post" action="/users">
-
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <div>
         <label for="username">Votre pseudo :</label>
         <input type="text" name="username" id="username" placeholder="Ex : Zozor" size="30" maxlength="10" />
     </div>
     <div>
         <label for="email">Email :</label>
-        <input type="email" name="email" id="email" placeholder="Ex : Zozor@email.com" size="30" maxlength="10" />
+        <input type="email" name="email" id="email" placeholder="Ex : Zozor@email.com" size="30" maxlength="30" />
+    </div>
+    <div>
+        <label for="bio">Bio :</label>
+        <input type="bio" name="bio" id="bio" placeholder="Ex : Tell your life" size="30" maxlength="90" />
     </div>
     <div class ="button">
-    	<button type "submit" > Save user</button>
-    	<button type "reset"> Reset </button>
+        <button type "submit" > Save user</button>
 
     </div>
+    
 </form>
+<% end %>
+
+<form_tag method="post" action="/users">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <div>
+        <label for="username">Votre pseudo :</label>
+        <input type="text" name="username" id="username" placeholder="Ex : Zozor" size="30" maxlength="10" />
+    </div>
+    <div>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Ex : Zozor@email.com" size="30" maxlength="30" />
+    </div>
+    <div>
+        <label for="bio">Bio :</label>
+        <input type="bio" name="bio" id="bio" placeholder="Ex : Tell your life" size="30" maxlength="90" />
+    </div>
+    <div class ="button">
+        <button type "submit" > Save user</button>
+
+    </div>
+    
+</form_tag>
