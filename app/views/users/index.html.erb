@@ -1,5 +1,14 @@
-<<% @users.each do |user| %>
-	<%= user.username %>
-	<%= user.email %>
-	<%= user.bio %>
+<p>Welcome to our random formulaire</p>
+
+<p><a href="/users/new"><input type="button" value="New input"></a></p>
+
+<p>liste des derniers inputs </p>>
+
+<fieldset>
+<% @users.each do |user| %>
+	Name: <%= user.username %>
+	Email: <%= user.email %></br>
+	Input: <%= user.bio %> 
+	</br></br></br>
 <% end %>
+</fieldset>

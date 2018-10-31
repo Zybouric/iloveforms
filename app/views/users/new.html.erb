@@ -1,44 +1,34 @@
 
-Formulaire Gossiping 
+Formulaire 
 <!-- FORM_FOR-->
 <%= form_for @users, url: {action: "create"} do |f| %>
  <fieldset>
     <ul>
-        <label for= "username"> Username:</label> <%= f.text_field :username %></br>
+        <label for= "username" required="required"> Username:</label> <%= f.text_field :username %></br>
         <label for= "email"> Email: </label><%= f.text_field :email %></br>
         <label for= "bio">Gossip: </label><%= f.text_area :bio, size: "33x12" %></br>
     </ul>
-    <%= f.submit value="Envoyer" %>
+    <%= f.submit value="Send" %> 
+    <a href="/users"><input type="button" value="Cancel"></a>
+
 </fieldset>
 <% end %>
 
 <!--
+
 </br></br></br>
-
 Form_tag Formulaire  
-
-<form_tag method="post" action="/users">
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <div>
-        <label for="username">Votre pseudo :</label>
-        <input type="text" name="username" id="username" placeholder="Ex : Zozor" size="30" maxlength="10" />
-    </div>
-    <div>
-        <label for="email">Email :</label>
-        <input type="email" name="email" id="email" placeholder="Ex : Zozor@email.com" size="30" maxlength="30" />
-    </div>
-    <div>
-        <label for="bio">Bio :</label>
-        <input type="bio" name="bio" id="bio" placeholder="Ex : Tell your life" size="30" maxlength="90" />
-    </div>
-    <div class ="button">
-        <button type "submit" > Save user</button>
-
-    </div>
-    
-</form>
-
-
+<%= form_tag do %>
+<div>
+ Username
+<%= text_field_tag(:username) %>
+  Email
+<%= text_field_tag(:email) %>
+  Bio
+<%= text_field_tag(:bio) %>
+<%= submit_tag 'Save' %>
+</div>
+<% end %>
 HTML Formulaire 
 <form action="/users" method="POST">
    Username: <input type="string" name="username"></br>
