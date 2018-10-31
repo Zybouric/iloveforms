@@ -1,26 +1,21 @@
 
-<form action="/users" method="POST">
-    Username: <input type="string" name="username">
-</br>
-   Email: <input type="string" name="email">
-</br>
-   Gossip <input type="text" name="bio">
-</br>
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-</br>
-  <input type="submit" value="Envoyer le formulaire">
-</form>
-
-
+Formulaire Gossiping 
+<!-- FORM_FOR-->
 <%= form_for @users, url: {action: "create"} do |f| %>
-    
-    Username: <%= f.text_field :username %>
-    Email: <%= f.text_field :email %>
-    Gossip: <%= f.text_area :bio %>
-    <%= f.submit%>
-
+ <fieldset>
+    <ul>
+        <label for= "username"> Username:</label> <%= f.text_field :username %></br>
+        <label for= "email"> Email: </label><%= f.text_field :email %></br>
+        <label for= "bio">Gossip: </label><%= f.text_area :bio, size: "33x12" %></br>
+    </ul>
+    <%= f.submit value="Envoyer" %>
+</fieldset>
 <% end %>
 
+<!--
+</br></br></br>
+
+Form_tag Formulaire  
 
 <form_tag method="post" action="/users">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
@@ -41,5 +36,17 @@
 
     </div>
     
-</form_tag>
+</form>
 
+
+HTML Formulaire 
+<form action="/users" method="POST">
+   Username: <input type="string" name="username"></br>
+   Email: <input type="string" name="email"></br>
+   Gossip <input type="text" name="bio"></br>
+   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"></br>
+   <input type="submit" value="Envoyer le formulaire">
+</form>
+
+</br></br></br>
+-->
