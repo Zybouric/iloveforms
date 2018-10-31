@@ -17,8 +17,8 @@
  <li>Make a rails server <code>rails server</code></li>
  
 </ol>
-
-  <p> To see the final result go there : XXXXXlien herokuXXXXXX
+[lien github] (https://github.com/Zybouric/iloveforms.git)
+  <p> To see the final result go [there:] (https://morning-dawn-30766.herokuapp.com/users)
 
   <h2>Team</h2>
 
